@@ -12,7 +12,7 @@ import useSearchModal from "@/app/hooks/useSearchModal";
 import Modal from "./Modal";
 import Calendar from "../inputs/Calendar";
 import Counter from "../inputs/Counter";
-import CountrySelect, { CountrySelectValue } from "../inputs/CountrySelect";
+import LocationInput, { LocationValue as CountrySelectValue } from "../inputs/CountrySelect";
 import Heading from "../Heading";
 
 enum STEPS {
@@ -121,7 +121,7 @@ const SearchModal = () => {
         title="Where do you want the item?"
         subtitle="Enter your location!"
       />
-      <CountrySelect
+      <LocationInput
         value={location}
         onChange={(value) => setLocation(value as CountrySelectValue)}
       />
