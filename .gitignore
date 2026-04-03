@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+
+# JAR originals (keep main JARs, ignore .original)
+*.jar.original
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/.env
+
+# IDE
+.idea/
+*.iml
+.vscode/
